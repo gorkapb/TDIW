@@ -1,0 +1,48 @@
+#main-header {
+    text-align: center;
+}
+
+/*#categorias_esborrany {
+    background-color: lightgreen;
+    padding: 0px;
+    display: grid;
+    grid-template-areas: 
+        'logo logo logo logo logo'
+        'Plantas Accessorios Novedades Contactos';
+}
+
+#categorias_esborrany nav {
+    background-color: lightgreen;
+    padding: 0px;
+    text-align: center;
+    vertical-align: center;
+}*/
+
+#nav-menu{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-menu ul {
+    display:flex;
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+}
+
+#nav-menu ul li {
+    padding: 10px;
+    list-style:none;
+}
+
+#nav-menu ul li a {
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 2px;
+}
+
+#nav-menu ul li a hover{
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 2px;
+}
