@@ -1,41 +1,108 @@
 
-/*Index.html*/
+/*INDEX*/
+
 body {
-        background-color: #F0F7EE;
+        background-color: #eeeeee;
 }
 
-#main-header {
+.layout {
+    margin-right: 5%;
+    margin-left: 5%;
+    border: dashed 1px lightgray;
+}
+
+.main-header {
     text-align: center;
 }
 
-#nav-menu{
+.nav-menu{
     display:flex;
     justify-content: center;
     align-items: center;
 }
 
-#nav-menu ul {
+.nav-menu ul {
     display:flex;
-    border-top: solid 1px;
-    border-bottom: solid 1px;
+    border-top: dashed 2px #cdc9c3;
+    border-bottom: dashed 2px #cdc9c3;
 }
 
-#nav-menu ul li {
+.nav-menu ul li {
     padding: 10px;
     list-style:none;
 }
 
-#nav-menu ul li a {
-    font-family: sans-serif;
+.nav-menu ul li a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
     text-decoration: none;
+    letter-spacing: 2.5px;
+    color: #373a40;
     padding: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-#nav-menu ul li a hover{
-    font-family: sans-serif;
+.nav-menu ul li a:visited,  { text-decoration: none; color:#373a40; }
+.nav-menu ul li a:hover { text-decoration: none; color:#968c83; }
+
+section{
+    text-align: center;
+}
+
+section h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
     text-decoration: none;
-    padding: 2px;
+    letter-spacing: 2.5px;
+    color: #373a40;
+    font-size: 40px;
+}
+
+.product-list {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.product {
+    border: dashed 1px lightgray;
+    margin: 10px;
+    padding: 30px;
+}
+
+.product h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 2.5px;
+    color: #373a40;
+}
+
+footer {
+    background-color: #d9e4dd;
+    text-align: center;
+}
+
+footer h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 2.5px;
+    color: #373a40;
 }
 
 
-/*register.html*/
+/*LOGIN Y REGISTER*/
+
+.div-form{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-form form{
+    display:flex;
+}
