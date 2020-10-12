@@ -1,22 +1,12 @@
+
+/*Index.html*/
+body {
+        background-color: #F0F7EE;
+}
+
 #main-header {
     text-align: center;
 }
-
-/*#categorias_esborrany {
-    background-color: lightgreen;
-    padding: 0px;
-    display: grid;
-    grid-template-areas: 
-        'logo logo logo logo logo'
-        'Plantas Accessorios Novedades Contactos';
-}
-
-#categorias_esborrany nav {
-    background-color: lightgreen;
-    padding: 0px;
-    text-align: center;
-    vertical-align: center;
-}*/
 
 #nav-menu{
     display:flex;
@@ -46,3 +36,6 @@
     text-decoration: none;
     padding: 2px;
 }
+
+
+/*register.html*/
