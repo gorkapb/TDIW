@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <meta charset="utf-8"/>
+        <title>PlantStore</title>
+        <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+    </head>
+    <body>
+        <div class='layout'>
+            <header class='main-header'>
+                <div>
+                    <a href="register.php">Sign up</a>
+                    <a href="login.php">Log in</a>
+                </div>
+                <img src='img/logo.png' width='350px'/> 
+            </header>
+            <nav>
+                <div class='nav-menu'>
+                    <?php
+                        require __DIR__ . "/cabecera.php"
+                        $num = Cabecera();
+                    ?>
+                </div>
+            </nav>
+
+        
+            <section id='POPULAR'>
+                <h1>POPULAR</h1>
+                <div class = 'product-list'>
+                    <article class='product'> 
+                            <h2>Product</h2>
+                            <img src="img/planta.png">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </article> 
+                    <article class='product'> 
+                            <h2>Product</h2>
+                            <img src="img/planta.png">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </article> 
+                    <article class='product'> 
+                            <h2>Product</h2>
+                            <img src="img/planta.png">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </article> 
+                    <article class='product'> 
+                            <h2>Product</h2>
+                            <img src="img/planta.png">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </article> 
+
+                </div>
+            </section>
+
+            <section id='NEWPRODUCTS'>
+                <h1>NEW PRODUCTS</h1>
+                <div class = 'product-list'>
+                    <article class='product'> 
+                            <h2>Product</h2>
+                            <img src="img/planta.png">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </article> 
+                    <article class='product'> 
+                            <h2>Product</h2>
+                            <img src="img/planta.png">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </article> 
+                    <article class='product'> 
+                            <h2>Product</h2>
+                            <img src="img/planta.png">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </article> 
+                    <article class='product'> 
+                            <h2>Product</h2>
+                            <img src="img/planta.png">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </article>
+                    <article class='product'> 
+                            <h2>Product</h2>
+                            <img src="img/planta.png">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </article> 
+                    <article class='product'> 
+                            <h2>Product</h2>
+                            <img src="img/planta.png">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </article> 
+                    <article class='product'> 
+                            <h2>Product</h2>
+                            <img src="img/planta.png">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </article> 
+                    <article class='product'> 
+                            <h2>Product</h2>
+                            <img src="img/planta.png">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </article>         
+                </div> 
+            </section>
+
+            <section id='PLANTS'>
+                <h1>PLANTS</h1>
+                <div class = 'product-list'>
+                    <article class='product'> 
+                            <h2>Product</h2>
+                            <img src="img/planta.png">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </article> 
+                    <article class='product'> 
+                            <h2>Product</h2>
+                            <img src="img/planta.png">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </article> 
+                    <article class='product'> 
+                            <h2>Product</h2>
+                            <img src="img/planta.png">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </article> 
+                    <article class='product'> 
+                            <h2>Product</h2>
+                            <img src="img/planta.png">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </article>
+                    <article class='product'> 
+                            <h2>Product</h2>
+                            <img src="img/planta.png">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </article> 
+                    <article class='product'> 
+                            <h2>Product</h2>
+                            <img src="img/planta.png">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </article> 
+                    <article class='product'> 
+                            <h2>Product</h2>
+                            <img src="img/planta.png">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </article> 
+                    <article class='product'> 
+                            <h2>Product</h2>
+                            <img src="img/planta.png">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </article>         
+                </div>
+            </section>
+
+            <section id='ACCESORIES'>
+                <h1>ACCESORIES</h1>
+                <div class = 'product-list'>
+                    <article class='product'> 
+                            <h2>Product</h2>
+                            <img src="img/planta.png">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </article> 
+                    <article class='product'> 
+                            <h2>Product</h2>
+                            <img src="img/planta.png">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </article> 
+                    <article class='product'> 
+                            <h2>Product</h2>
+                            <img src="img/planta.png">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </article> 
+                    <article class='product'> 
+                            <h2>Product</h2>
+                            <img src="img/planta.png">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </article>
+                    <article class='product'> 
+                            <h2>Product</h2>
+                            <img src="img/planta.png">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </article> 
+                    <article class='product'> 
+                            <h2>Product</h2>
+                            <img src="img/planta.png">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </article> 
+                    <article class='product'> 
+                            <h2>Product</h2>
+                            <img src="img/planta.png">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </article> 
+                    <article class='product'> 
+                            <h2>Product</h2>
+                            <img src="img/planta.png">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </article>         
+                </div>
+            </section>
+            
+            <section id="CONTACT">
+                <h1>CONTACT</h1>
+                <p1> +34 677 26 45 99 </p1></br>
+                <p1> +34 93 580 36 27 </p1></br>
+                <p1> plantstore@contact.es </p1></br>
+                <p1> Calle de Las Plantas, 36 (Barcelona) </p1></br>
+            </section>
+
+            
+        </div>
+        <footer>
+                <h3>PlantStore&reg 2020-21</h3>
+        </footer>
+    </body>
+</html>
