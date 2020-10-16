@@ -19,13 +19,6 @@ p{
     color: #373a40;
 }
 
-section p1{
-    font-family: 'Poppins', sans-serif;
-    font-size: 11px;
-    letter-spacing: 2px;
-    color: grey;
-}
-
 a{
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
@@ -128,6 +121,13 @@ section h1{
 
 .product p{
     width: 250px
+}
+
+section p1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: grey;
 }
 
 footer {
