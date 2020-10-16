@@ -58,6 +58,9 @@ a{
 
 .nav-menu ul {
     display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     border-top: dashed 2px #cdc9c3;
     border-bottom: dashed 2px #cdc9c3;
 }
