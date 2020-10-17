@@ -15,7 +15,7 @@ body {
 p{
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    letter-spacing: 2.5px;
+    letter-spacing: 1.5px;
     color: #373a40;
 }
 
@@ -153,10 +153,23 @@ footer h3 {
 }
 
 .div-form form{
-    width: 25%;
-    border: dashed 2px #cdc9c3;;
+    width: 30%;
+    border: dashed 2px #cdc9c3;
     margin: 0 auto;
     padding: 4%;
+}
+
+.div-form form input{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    
+}
+
+.div-form form input[type=submit]{
+    background-color: white;
+    color: #373a40;
+
 }
 
 .div-form form label{

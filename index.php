@@ -19,7 +19,7 @@
                 <div class='nav-menu'>
                     <?php
                         require __DIR__ . "/cabecera.php"
-                        $num = Cabecera();
+                        Cabecera();
                     ?>
                 </div>
             </nav>
