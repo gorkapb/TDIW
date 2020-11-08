@@ -3,11 +3,11 @@
 require_once __DIR__.'/resource_base.php';
 
 
-$accio = $_GET['accio'];
+$accio = $_GET['accio'] ?? null;
  
-switch ($accio = '') {
-    case 'llistar-categories':
-        include __DIR__.'/resource_llista_categories.php';
+switch ($accio) {
+    case 'llistar-productes':
+        include __DIR__.'/resource_product_list.php';
         break;
 
     case 'register':
@@ -23,7 +23,7 @@ switch ($accio = '') {
         break;
 }
 
-
 require_once __DIR__.'/resource_footer.php';
 
 ?>
+

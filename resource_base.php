@@ -15,25 +15,15 @@
                 <div>
                     <a href="register.html">Sign up</a>
                     <a href="login.html">Log in</a>
+                    <a href="contact.php">Contact</a>
                 </div>
                 <img src='img/logo.png' width='350px'/> 
             </header>
 
+ 
             
-            <nav>
-                <div class='nav-menu'>
-                    <ul>
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="#POPULAR">POPULAR</a></li>
-                        <li><a href="#NEWPRODUCTS">NEW PRODUCTS</a></li>
-                        <li><a href="#PLANTS">PLANTS</a></li>
-                        <li><a href="#ACCESORIES">ACCESORIES</a></li>
-                        <li><a href="#CONTACT">CONTACT</a></li>
-                    </ul>
-                </div>
-            </nav>
-
-
-        
+            <div class='nav-menu'>
+                    <?php require __DIR__.'/controller/control_menu.php'; ?>
+            </div>
 	</body>
 <html>

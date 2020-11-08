@@ -6,7 +6,7 @@
     <body>
         <div class='layout'>
 
-            <?php require __DIR__.'/controller/control_categories.php'; ?>
+            <?php require __DIR__.'/controller/control_products.php'; ?>
         
         </div>
     </body>

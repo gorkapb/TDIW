@@ -1,0 +1,16 @@
+SSH
+ssh tdiw-g7@deic-dc17.uab.cat
+usuario: tdiw-g7
+contraseña: yaT4iv9T
+
+WEB
+url:http://tdiw-g7.deic-docencia.uab.cat/
+usuario: tdiw-g7
+contraseña: yaT4iv9T
+
+ENVIAR AL SERVIDOR 
+
+scp index.html http://tdiw-g7.deic:/home/TDIW/tdiw-g7/public_html
+
+SSH LINUX
+ssh tdiw-\g\7@deic-dc17.uab.cat
