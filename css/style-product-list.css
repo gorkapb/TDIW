@@ -2,14 +2,13 @@
 
 .product{
     border: dashed 2px #cdc9c3;
-    height: 400px;
+    height: 500px;
     width: 300px;
     margin: 30px;
     padding: 30px;
     text-align: center;
     align-items: center;
     align-content: center;
-    justify-content: center;
 }
 
 
@@ -22,7 +21,9 @@
 }
 
 .product img{
-    width: 250px;
-    height: 250px;
+    max-width: 250px;
+    max-height: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 

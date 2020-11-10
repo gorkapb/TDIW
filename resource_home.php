@@ -6,9 +6,9 @@
     </head>
     <body>
         <div class='layout'>
-
-            <?php require __DIR__.'/controller/control_categories.php'; ?>
-        
+            <section>
+                <?php require __DIR__.'/controller/control_categories.php'; ?>
+            </section>
         </div>
     </body>
 </html>

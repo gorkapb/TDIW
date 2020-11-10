@@ -31,6 +31,20 @@ h2{
     color: #373a40;
 }
 
+a:visited  { 
+    text-decoration: none; 
+    color:#373a40; 
+}
+
+.nav-menu ul li a:hover { 
+    text-decoration: none; 
+    color:#968c83; 
+}
+
+.layout-header {
+    margin-right: 5%;
+    margin-left: 5%;
+}
 
 .layout {
     margin-right: 5%;
@@ -82,8 +96,6 @@ h2{
     padding-right: 20px;
 }
 
-.nav-menu ul li a:visited  { text-decoration: none; color:#373a40; }
-.nav-menu ul li a:hover { text-decoration: none; color:#968c83; }
 
 section{
     text-align: center;
@@ -110,19 +122,6 @@ section h1{
 }
 
 
-.category {
-    border: dashed 2px #cdc9c3;
-    height: 300px;
-    margin: 30px;
-    padding: 30px;
-    text-align: center;
-}
-
-.category img{
-    width: 200px;
-}
-
-
 section p1{
     font-family: 'Poppins', sans-serif;
     font-size: 11px;
@@ -130,17 +129,3 @@ section p1{
     color: grey;
 }
 
-footer {
-    background-color: #d9e4dd;
-    text-align: center;
-    flex-shrink: 0;
-    margin-top: 20px;
-    width: 100%;
-}
-
-footer h3 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    letter-spacing: 2.5px;
-    color: #373a40;
-}

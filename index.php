@@ -27,6 +27,6 @@ switch ($accio) {
         break;
 }
 
-require_once __DIR__.'/resource_footer.php';
+include __DIR__.'/resource_footer.php';
 
 ?>

@@ -1,0 +1,22 @@
+.category {
+    border: dashed 2px #cdc9c3;
+    height: 300px;
+    width: 200px;
+    margin: 30px;
+    padding: 30px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+.category img{
+    width: 200px;
+    margin-top: 50px;
+}
+
+.category a {
+    font-size: larger;
+}
+
+
+

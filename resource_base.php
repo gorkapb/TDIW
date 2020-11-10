@@ -3,15 +3,14 @@
 <!DOCTYPE html>       
 <html>
     <head>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
         <meta charset="utf-8"/>
         <title>PlantStore</title>
-        <link rel="stylesheet" type="text/css" href="css/styles.css"/>
-        <link rel="stylesheet" type="text/css" href="css/style-home.css"/>
+        <link rel="stylesheet" type="text/css" href="css/style-base.css"/>
     </head>
     <body>
-        
-           
+        <div class="layout-header"> 
+
             <header class='main-header'>
                 <div>
                     <a href="index.php?accio=register">Sign up</a>
@@ -25,5 +24,6 @@
             <div class='nav-menu'>
                     <?php require __DIR__.'/controller/control_menu.php'; ?>
             </div>
+        </div>
 	</body>
-<html>
+</html>
