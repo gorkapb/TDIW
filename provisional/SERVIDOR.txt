@@ -1,5 +1,5 @@
 SSH
-ssh tdiw-g7@deic-dc17.uab.cat
+tdiw-g7@deic-dc17.uab.cat
 usuario: tdiw-g7
 contraseña: yaT4iv9T
 

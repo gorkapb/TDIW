@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Login</title>
+        <title>PlantStore</title>
+        <link rel="stylesheet" type="text/css" href="css/style-register-login.css"/>
 	</head>
 	<body>
         <div class='layout'>

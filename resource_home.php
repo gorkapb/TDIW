@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>PlantStore</title>
+        <link rel="stylesheet" type="text/css" href="css/style-home.css"/>
     </head>
     <body>
         <div class='layout'>

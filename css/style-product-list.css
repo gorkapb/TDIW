@@ -1,0 +1,28 @@
+
+
+.product{
+    border: dashed 2px #cdc9c3;
+    height: 400px;
+    width: 300px;
+    margin: 30px;
+    padding: 30px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+
+.product h2 {
+    max-width: 250px;
+}
+
+.product p{
+    width: 250px;
+}
+
+.product img{
+    width: 250px;
+    height: 250px;
+}
+

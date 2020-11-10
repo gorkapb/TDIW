@@ -1,5 +1,3 @@
-/*INDEX*/
-
 html,body{
     height: 100%;
 }
@@ -32,8 +30,6 @@ h2{
     letter-spacing: 2.5px;
     color: #373a40;
 }
-
-
 
 
 .layout {
@@ -89,10 +85,6 @@ h2{
 .nav-menu ul li a:visited  { text-decoration: none; color:#373a40; }
 .nav-menu ul li a:hover { text-decoration: none; color:#968c83; }
 
-
-
-
-
 section{
     text-align: center;
     align-items: center;
@@ -107,10 +99,6 @@ section h1{
     color: #373a40;
     font-size: 40px;
 }
-
-
-
-
 
 
 .list {
@@ -131,33 +119,8 @@ section h1{
 }
 
 .category img{
-    width: 200px
+    width: 200px;
 }
-
-.product p{
-    width: 250px
-}
-
-.product{
-    border: dashed 2px #cdc9c3;
-    margin: 30px;
-    padding: 30px;
-}
-
-
-.product img{
-    width: 200px
-}
-
-.product p{
-    width: 250px
-}
-
-
-
-
-
-
 
 
 section p1{
@@ -176,40 +139,6 @@ footer {
 }
 
 footer h3 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    letter-spacing: 2.5px;
-    color: #373a40;
-}
-
-
-/*LOGIN Y REGISTER*/
-
-.div-form{
-    align-items: center;
-}
-
-.div-form form{
-    width: 30%;
-    border: dashed 2px #cdc9c3;
-    margin: 0 auto;
-    padding: 4%;
-}
-
-.div-form form input{
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    letter-spacing: 0.5px;
-    
-}
-
-.div-form form input[type=submit]{
-    background-color: white;
-    color: #373a40;
-
-}
-
-.div-form form label{
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     letter-spacing: 2.5px;
