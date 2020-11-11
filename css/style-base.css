@@ -36,7 +36,7 @@ a:visited  {
     color:#373a40; 
 }
 
-.nav-menu ul li a:hover { 
+a:hover { 
     text-decoration: none; 
     color:#968c83; 
 }

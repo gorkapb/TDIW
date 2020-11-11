@@ -7,6 +7,8 @@
         <meta charset="utf-8"/>
         <title>PlantStore</title>
         <link rel="stylesheet" type="text/css" href="css/style-base.css"/>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/functions.js"></script>
     </head>
     <body>
         <div class="layout-header"> 
