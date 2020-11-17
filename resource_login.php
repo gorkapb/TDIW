@@ -5,10 +5,10 @@
         <link rel="stylesheet" type="text/css" href="css/style-register-login.css"/>
 	</head>
 	<body>
-        <div class='layout'>
+        <div id='layout'>
             <section>
                 <h1>LOG IN</h1>
-                <div class="div-form">
+                <div id="div-form">
                     <form method = "post">
                         <!--Poner DIR-->
                         <label for="name">Name:</label>
@@ -18,6 +18,7 @@
                         <input type="submit" value="Log in" />
                     </form>	
                 </div>
+                <a href="index.php?accio=home">Home</a>
             </section>
     </div>  
 	</body>

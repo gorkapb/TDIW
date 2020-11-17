@@ -5,11 +5,11 @@
                 <link rel="stylesheet" type="text/css" href="css/style-register-login.css"/>
         </head>
 	<body>
-                <div class='layout'>
+                <div id='layout'>
                         <section>
                                 <h1>SIGN UP</h1>
-                                <div class="div-form">
-                                        <form method = "post">
+                                <div id="div-form">
+                                        <form method = "post" action='/controller/control_register.php?'>
                                                 <label for="name">Name:</label>
                                                 <input type="text" name="name" required><br/>
                                                 <label for="email:">Email:</label>
@@ -25,6 +25,7 @@
                                                 <input type="submit" value="Sign up" />
                                         </form>	
                                 </div>
+                                <a href="index.php?accio=home">Home</a>
                                 <p>Have you already registered?</p>
                                 <a href="index.php?accio=login">Log in</a>
                         </section>

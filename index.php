@@ -6,9 +6,11 @@ require_once __DIR__.'/resource_base.php';
 $accio = $_GET['accio'] ?? null;
  
 switch ($accio) {
+    /*
     case 'list-products':
         include __DIR__.'/resource_product_list.php';
         break;
+    */
 
     case 'register':
             include __DIR__.'/resource_register.php';

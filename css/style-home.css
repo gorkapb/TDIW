@@ -1,3 +1,33 @@
+/* MENU */
+
+#nav-menu{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-menu ul {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-top: dashed 2px #cdc9c3;
+    border-bottom: dashed 2px #cdc9c3;
+}
+
+#nav-menu ul li {
+    padding: 10px;
+    list-style:none;
+}
+
+#nav-menu ul li a {
+    padding: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* CATEGORIAS */
+
 .category {
     border: dashed 2px #cdc9c3;
     height: 300px;
@@ -18,5 +48,12 @@
     font-size: larger;
 }
 
+.category:hover{
+    border: dashed 2px grey;
+    cursor: pointer;
+}
 
+.category-menu:hover{
+    cursor: pointer;
+}
 

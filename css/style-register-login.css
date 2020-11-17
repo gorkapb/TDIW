@@ -1,28 +1,30 @@
-.div-form{
+#div-form{
     align-items: center;
 }
 
-.div-form form{
+#div-form form{
     width: 30%;
     border: dashed 2px #cdc9c3;
     margin:0 auto;
     padding: 4%;
+    margin-bottom: 15px;
 }
 
-.div-form form input{
+#div-form form input{
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     letter-spacing: 0.5px;
+    margin:5px;
     
 }
 
-.div-form form input[type=submit]{
+#div-form form input[type=submit]{
     background-color: white;
     color: #373a40;
 
 }
 
-.div-form form label{
+#div-form form label{
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     letter-spacing: 2.5px;
