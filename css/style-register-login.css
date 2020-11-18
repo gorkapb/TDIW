@@ -1,5 +1,6 @@
 #div-form{
     align-items: center;
+    margin-bottom: 15px;
 }
 
 #div-form form{
@@ -7,7 +8,6 @@
     border: dashed 2px #cdc9c3;
     margin:0 auto;
     padding: 4%;
-    margin-bottom: 15px;
 }
 
 #div-form form input{

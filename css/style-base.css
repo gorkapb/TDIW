@@ -58,9 +58,12 @@ a:hover {
 #layout-header {
     margin-right: 5%;
     margin-left: 5%;
+    margin-top: 1px;
+    margin-bottom: 1px;
 }
 
 #layout {
+    margin-top: 1px;
     margin-right: 5%;
     margin-left: 5%;
     /* border: dashed 1px #cdc9c3; */
@@ -72,6 +75,7 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 1px;
 }
 
 #main-header div{

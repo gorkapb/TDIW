@@ -1,6 +1,8 @@
 /* MENU */
 
 #nav-menu{
+    margin-top: 1px;
+    margin-bottom: 1px;
     display:flex;
     justify-content: center;
     align-items: center;
