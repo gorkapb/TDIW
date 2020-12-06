@@ -27,8 +27,6 @@
                     </div>
                 </div>
                 <a href='index.php?accio=home'><img id='logo' src='img/logo1.png' width='250px'/></a>
-                
-                <!-- <a href='index.php?accio=home'><h1>PlantStore</h1></a> -->
             </header>
         </div>
 	</body>

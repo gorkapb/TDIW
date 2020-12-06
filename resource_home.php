@@ -14,5 +14,7 @@
                 <?php require __DIR__.'/controller/control_categories.php'; ?>
             </section>
         </div>
+
+        <?php include __DIR__.'/resource_footer.php';?>
     </body>
 </html>

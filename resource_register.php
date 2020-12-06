@@ -29,7 +29,8 @@
                                 <p>Have you already registered?</p>
                                 <a href="index.php?accio=login">Log in</a>
                         </section>
-                </div>  
+                </div>
+                <?php include __DIR__.'/resource_footer.php';?>  
 	</body>
 </html>
 

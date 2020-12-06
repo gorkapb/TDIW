@@ -1,5 +1,7 @@
 <?php 
     
+session_start();
+
 require_once __DIR__.'/resource_base.php';
 
 
@@ -28,7 +30,5 @@ switch ($accio) {
         include __DIR__.'/resource_home.php';
         break;
 }
-
-include __DIR__.'/resource_footer.php';
 
 ?>
