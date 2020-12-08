@@ -26,7 +26,7 @@
                                         </form>	
                                 </div>
                                 <a href="index.php?accio=home">Home</a>
-                                <p>Have you already registered?</p>
+                                <a href="index.php?accio=login">Have you already registered?</a>
                                 <a href="index.php?accio=login">Log in</a>
                         </section>
                 </div>

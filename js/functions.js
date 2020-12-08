@@ -20,7 +20,6 @@ $(document).ready(function(){
     $('#logo-usuario').click( function(){
         $('.Toggle').slideToggle('flex');
     });
-
 });
 
 

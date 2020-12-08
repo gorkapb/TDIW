@@ -59,3 +59,26 @@
     cursor: pointer;
 }
 
+/* CABAS VISIBLE */
+
+#cabas-container{
+    position: fixed;
+    float: right;
+    height: 80%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 250px;
+    margin-left: 85%;
+}
+
+#cabas{
+    border: dashed 2px #cdc9c3;
+    height: 80%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 250px;
+}
+
+#cabas-list{
+
+}

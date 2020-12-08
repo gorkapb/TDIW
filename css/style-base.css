@@ -64,8 +64,8 @@ a:hover {
 
 #layout {
     margin-top: 1px;
-    margin-right: 5%;
-    margin-left: 5%;
+    margin-right: 10%;
+    margin-left: 10%;
     /* border: dashed 1px #cdc9c3; */
     flex: 1 0 auto;
 }
@@ -123,9 +123,6 @@ section p1{
 
 /* DESPLEGABLE */
 
-#desplegable{
-}
-
 #logo-usuario{
     width: 30px;
     margin-top: 5px;
@@ -138,7 +135,6 @@ section p1{
 .Toggle {
     display: none;
     position: absolute;
-
 } 
 
 .Toggle ul li{

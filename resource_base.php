@@ -13,21 +13,11 @@
     <body>
         <div id="layout-header"> 
 
-            <header id='main-header'>
-                <div id = 'desplegable'>
-                    <img href='#' src='img/logo_usuario.png' id="logo-usuario"/>
-                    
-                    <!-- Require new php within IF for control-->
-                    <div class = "Toggle">
-                        <ul>
-                            <li><a href="index.php?accio=register">Sign up</a></li>
-                            <li><a href="index.php?accio=login">Log in</a></li>
-                            
-                        </ul>
-                    </div>
-                </div>
+            <header id='main-header'>    
+                <?php require __DIR__.'/controller/control_desplegable.php'; ?>        
                 <a href='index.php?accio=home'><img id='logo' src='img/logo1.png' width='250px'/></a>
             </header>
         </div>
+        
 	</body>
 </html> 

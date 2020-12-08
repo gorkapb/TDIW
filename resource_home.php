@@ -5,9 +5,16 @@
         <link rel="stylesheet" type="text/css" href="css/style-home.css"/>
     </head>
     <body>
+        <p style='display=absolute'><?php print_r($_SESSION); ?></p>
+
         <div id='nav-menu'>
             <?php require __DIR__.'/controller/control_menu.php'; ?>
         </div>
+        
+        <!-- CABAS VISIBLE EN TODO MOMENTO, SOLO CUANDO SE INICIA SESION -->
+        <div id=cabas-container> 
+            <?php require __DIR__.'/controller/control_cabas_visible.php'; ?>
+        </div> 
         
         <div id='layout'>
             <section>

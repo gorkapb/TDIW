@@ -1,7 +1,7 @@
 <?php
-    function login($connection, $mail, $pw){
+    function ifRegisterBefore($connection, $mail){
         try{
-            $SQL = "SELECT name, email, password FROM users where email= :mail LIMIT 1";
+            $SQL = "SELECT email FROM users WHERE email = :mail LIMIT 1";
             $consult_login = $connection->prepare($SQL);
         
             $consult_login->bindParam(":mail", $mail, PDO::PARAM_STR); 
@@ -14,14 +14,9 @@
         }
         
         if($login_result != null){
-            if(password_verify($pw, $login_result['password'])){
-                return $login_result;//VALID
-            }else{
-                //Mostrar mensaje de error
-                return null;//INVALID PASSWORD
-            }
+            return true;
         }else{
-            return null;//INVALID USER
+            return false;
         }
     }
 ?>
