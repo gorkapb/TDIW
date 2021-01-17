@@ -74,7 +74,7 @@
     }
     
     //BUSCAR UN PRODUCTO EN EL SUBCART (PRIVADA)
-    function searchInSubcart($connection, $id_cart, $product_id, $product_price) {
+    function searchInSubcart($connection, $id_cart, $product_id) {
         try{
             $SQL = "SELECT * FROM subcart WHERE id_cart = $id_cart AND product_id = $product_id LIMIT 1";
             $consult_searchSubcart = $connection->prepare($SQL);
@@ -90,69 +90,80 @@
         return $result_searchSubcart;
     }
 
-
-    function addProduct($connection, $id_cart, $product_id, $product_price, $search) {
+    //AÑADIR PRODUCTO A SUBCART (PÚBLICA)
+    function addProduct($connection, $id_cart, $product_id, $product_name, $product_price, $search) {
         $result_search = true;
 
+        //SI $SEARCH = TRUE, HACE BUSQUEDA EN LA BASE DE DATOS
         if ($search) {
-            $result_search = searchInSubcart($connection, $id_cart, $product_id, $product_price);
+            $result_search = searchInSubcart($connection, $id_cart, $product_id);
         }
 
         if ($result_search) {
             //EXISTE EL PRODUCT, AUMENTO EN 1 LAS UNIDADES
-
-            $SQL = "INSERT INTO cart(user, id_cart, pay) VALUES (:user, :id_cart, 0)";
-            $consult_addProduct = $connection->prepare($SQL);
-
-
+            $SQL = "UPDATE subcart SET units = (units + 1), price_total = (price_total + $product_price) WHERE id_cart = :id_cart AND product_id = :product_id"; //FUNCIONARÁ LA SUMA ¿?
         } else { 
             //AÑADO EL PRODUCTO, UNIDADES = 1, PRICE = PRICE_TOTAL
-
+            $SQL = "INSERT INTO subcart(id_cart, product_id, price, units, price_total) VALUES (:id_cart, :product_id, $product_price, 1, $product_price)";
         }
 
-        $consult_addProduct->bindParam(":id_cart", $id_cart, PDO::PARAM_STR); 
-        $consult_addProduct->bindParam(":product_id", $product_id, PDO::PARAM_INT); 
-        $consult_addProduct->bindParam(":product_price", $product_price, PDO::PARAM_INT);
+        $consult_addProduct = $connection->prepare($SQL);
+
+        $consult_addProduct->bindParam(":id_cart", $id_cart, PDO::PARAM_INT); 
+        $consult_addProduct->bindParam(":product_id", $product_id, PDO::PARAM_STR); 
+        $consult_addProduct->bindParam(":product_name", $product_name, PDO::PARAM_STR); 
+        //$consult_addProduct->bindParam(":product_price", $product_price, PDO::PARAM_FLOAT); //PARAM_FLOAT NO EXISTE, MIRARLO
 
         $consult_addProduct->execute();
     }
 
-    //Resta un articulo (si tenias 5 ahora tienes 4)
-    function releaseUnits($connection, $id_cart, $product_name){
+    //RESTA UN ARTICULO (SI TENÍAS 5 AHORA TIENES 4) (PÚBLICA) 
+    function releaseUnits($connection, $id_cart, $product_id) {
+
+        $SQL = "UPDATE subcart SET units = (units - 1), price_total = (price_total - $product_price) WHERE id_cart = :id_cart AND product_id = :product_id"; //FUNCIONARÁ LA RESTA ¿?
+        $consult_releaseUnits = $connection->prepare($SQL);
+
+        $consult_releaseUnits->bindParam(":id_cart", $id_cart, PDO::PARAM_INT); 
+        $consult_releaseUnits->bindParam(":product_id", $product_id, PDO::PARAM_STR); 
+        $consult_releaseUnits->bindParam(":product_name", $product_name, PDO::PARAM_STR); 
+        //$consult_addProduct->bindParam(":product_price", $product_price, PDO::PARAM_FLOAT); //PARAM_FLOAT NO EXISTE, MIRARLO
+
+        $consult_releaseUnits->execute();
     }
 
-    //Borra un articulo (da igual cuantas unidades tienes)
-    function deleateProduct($connection, $id_cart, $product_name){
+    //BORRA UN ARTÍCULO (DA IGUAL CUANTAS UNIDADES TIENES) (PÚBLICA)
+    function deleteProduct($connection, $id_cart, $product_id) {
+
+        $SQL = "DELETE FROM subcart WHERE id_cart = :id_cart AND product_id = :product_id"; //FUNCIONARÁ LA RESTA ¿?
+        $consult_deleteProduct = $connection->prepare($SQL);
+
+        $consult_deleteProduct->bindParam(":id_cart", $id_cart, PDO::PARAM_STR); 
+        $consult_deleteProduct->bindParam(":product_id", $product_id, PDO::PARAM_INT); 
+
+        $consult_deleteProduct->execute();
     }
 
-    //Ponemos variable pay de cart = 1
-    function payCart($connection, $id_cart){
+    //PONEMOS VARIABLE PAY DE CART = 1 (PORQUE PAGAMOS) (PÚBLICA)
+    function payCart($connection, $id_cart) {
+        $SQL = "UPDATE cart SET pay = 1 WHERE id_cart = :id_cart";
+        $consult_payCart = $connection->prepare($SQL);
+
+        $consult_payCart->bindParam(":id_cart", $id_cart, PDO::PARAM_INT);
+
+        $consult_payCart->execute();
     }
 
-    //BORRAR!!
-    function Function($connection, $email, $pw){
-        try{
-            $SQL = "SELECT name, email, password FROM users WHERE email= :mail LIMIT 1";
-            $consult_login = $connection->prepare($SQL);
+    //PASAR TODOS LOS PRODUCTOS DEL CART (PÚBLICA)
+    function getCart($connection, $id_cart) {
+        $SQL = "SELECT * FROM subcart WHERE id_cart = $id_cart";
+        $consult_getCart = $connection->prepare($SQL);
+
+        $consult_getCart->bindParam(":id_cart", $id_cart, PDO::PARAM_INT);
+
+        $consult_getCart->execute();
+
+        $result_getCart = $consult_getCart->fetch(PDO::FETCH_ASSOC);
         
-            $consult_login->bindParam(":mail", $mail, PDO::PARAM_STR); 
-            $consult_login->execute();
-
-            $login_result = $consult_login->fetch(PDO::FETCH_ASSOC);
-             
-        }catch(PDOException $e){
-            echo  "Error: " . $e->getMessage();
-        }
-        
-        if($login_result != null){
-            if(password_verify($pw, $login_result['password'])){
-                return $login_result;//VALID
-            }else{
-                //Mostrar mensaje de error
-                return null;//INVALID PASSWORD
-            }
-        }else{
-            return null;//INVALID USER
-        }
+        return $result_getCart;
     }
 ?>

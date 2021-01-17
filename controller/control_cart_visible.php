@@ -5,16 +5,16 @@
 
         //VARIABLES
         $connection = connectaBD();
+        $cart_id = $_SESSION['cart_id']; 
         $product_id = $_GET['product_id'];
         $product_price = $_GET['product_price'];
-        $cart_id = $_SESSION['cart_id']; 
-
+        
         
         if($_GET['accio']=='add'){ //AÑADIR PRODUCTO 
-            addProduct($connection, $cart_id, $product_id, $product_price, $product_price, $search)ñ
+            addProduct($connection, $cart_id, $product_id, $product_name, $product_price, $search);
         }
         elseif($_GET['accio']=='remove'){ //ELIMINAR PRODUCTO CON GET
-            removeProduct($connection, $id_cart, $product_id)ñ
+            removeProduct($connection, $id_cart, $product_id);
         }
         
         //CONSULTA PRODUCTOS, PRECIO, ETC
