@@ -17,7 +17,7 @@
     </div>
 
     <div id= 'product-purchase'style='grid-area: purchase'>    
-        <a href="">Purchase</a> 
+        <a href="">Add to cart</a> 
     </div>
 </div>
 

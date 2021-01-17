@@ -13,7 +13,7 @@
         
         <!-- CABAS VISIBLE EN TODO MOMENTO, SOLO CUANDO SE INICIA SESION -->
         <div id=cabas-container> 
-            <?php require __DIR__.'/controller/control_cabas_visible.php'; ?>
+            <?php require __DIR__.'/controller/control_cart_visible.php'; ?>
         </div> 
         
         <div id='layout'>

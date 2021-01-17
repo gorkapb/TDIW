@@ -16,6 +16,10 @@
                 include __DIR__.'/resource_login.php';
                 break;
 
+        case 'cart':
+            include __DIR__.'/resource_cart.php';
+            break;
+
         case 'home':
             include __DIR__.'/resource_home.php';
             break;

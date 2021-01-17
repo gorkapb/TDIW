@@ -67,8 +67,8 @@
     height: 80%;
     margin-top: 10%;
     margin-bottom: 10%;
-    width: 250px;
-    margin-left: 85%;
+    width: 12%;
+    margin-left: 86%;
 }
 
 #cabas{
@@ -76,9 +76,41 @@
     height: 80%;
     margin-top: 10%;
     margin-bottom: 10%;
-    width: 250px;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+
+#cabas-title{
+    height: 5%;
+    padding-bottom:10px;
 }
 
 #cabas-list{
+    height: 70%;
+    overflow: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-top: dashed 2px #cdc9c3;
+    border-bottom: dashed 2px #cdc9c3;
+}
 
+#cabas-list ul{
+    /* align-items: center; */
+    text-align:left;
+
+}
+
+#cabas-list ul li {
+    margin: 5px;
+    list-style:none;
+}
+
+#cabas-price{
+    margin-top: 5px;
+    height: 5%;
+}
+#cabas-purchase{
+    height: 5%;
 }
