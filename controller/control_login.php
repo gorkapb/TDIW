@@ -30,6 +30,7 @@
         if($user) { //INICIAMOS SESION
             $_SESSION['user_id'] =  $user['email'];
             $_SESSION['user_name'] =  $user['name'];
+            $_SESSION["total"] = 0;
         }
     }  
     header('Location: /../index.php?accio=login');

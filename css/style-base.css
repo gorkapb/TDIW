@@ -185,7 +185,7 @@ section p1{
 
 /* DETAIL */
 
-#container-detail{
+.container-detail{
     border: dashed 2px #cdc9c3;
     display: grid;
     grid-row-gap: 5px;
@@ -200,19 +200,22 @@ section p1{
         'image purchase';
 }
 
-#container-detail div{
+.container-detail div{
     text-align: center;
     justify-content: center;
     align-items: center;
     align-content: center;
 }
 
-#product-img img{
+.product-img img{
     height: 350px;
     max-width: 350px;
 }
 
-#product-description p{
+.product-description p{
     max-width: 600px;
     margin: 0 auto;
 }
+
+
+

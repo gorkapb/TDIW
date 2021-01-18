@@ -1,24 +1,25 @@
+
+<!--  DEFINITIVO !!!!!!!!!!!!!!! -->
 <div id='cabas'>
     <div id='cabas-title'>
         <a href="index.php?accio=cart"><h2>CART</h2></a>
     </div>
 
-    <div id='cabas-list'>   <!-- mandamos $cart(product_id ,product_name, price, price_total, units), $cart_price  -->
+    <div id='cabas-list'>   
         <ul>
-            <?php foreach ($cart as $subcart) { ?>
+            <?php if(isset($_SESSION["cart"])){ foreach ($_SESSION["cart"] as $prod) { ?>
                 <li> 
-                    <p><?php echo $subcart["product_name"] ?></p>
-                    <p>x<?php echo $subcart["units"] ?></p>
+                    <p><?php echo $_SESSION["name"][$prod] ?></p>
+                    <p>x<?php echo $_SESSION["quantity"][$prod] ?></p>
                 </li>
-            <?php } ?>
+            <?php }} ?>
         </ul>
     </div>
-
     <div id='cabas-price'>
-        <p>$<?php $cart_price ?></p>
+        <p>$<?php echo $_SESSION["total"] ?></p>
     </div>
 
     <div id='cabas-purchase'>
-        <a>Purchase</a>
+        <a href="index.php?accio=cart">Purchase</a>
     </div>
 </div>

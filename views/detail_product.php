@@ -1,23 +1,22 @@
-<div id = "container-detail">
+<div class = "container-detail">
 
-    <div id = "product-img" style='grid-area: image'>
+    <div class = "product-img" style='grid-area: image'>
         <img src= /img/<?php echo $productdetail[0]["image"]?> >
     </div>
 
-    <div id = "product-name"style='grid-area: name'>
+    <div class = "product-name"style='grid-area: name' id = '<?php echo $productdetail[0]["name"]?>'>
         <h2><?php echo $productdetail[0]["name"]?></h2>
     </div>
 
-    <div id = "product-description"style='grid-area: description'>
+    <div class = "product-description"style='grid-area: description'>
         <p> <?php echo $productdetail[0]["description"]?><p>
     </div>
 
-    <div id = "product-price"style='grid-area: price'>
+    <div class = "product-price"style='grid-area: price' id = '<?php echo $productdetail[0]["price"]?>'>
         <h2> $<?php echo $productdetail[0]["price"]?></h2>
     </div>
 
-    <div id= 'product-purchase'style='grid-area: purchase'>    
-        <a href="">Add to cart</a> 
+    <div style='grid-area: purchase'>    
+        <button class= 'product-purchase' id = '<?php echo $productdetail[0]["id"]?>' onclick='add_to_cart();'>Add to cart</button> 
     </div>
 </div>
-

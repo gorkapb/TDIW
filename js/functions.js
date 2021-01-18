@@ -11,7 +11,7 @@ $(document).ready(function(){
         }});
     });
 
-    $(".list").on('click', '.product',function(){
+    $(".list").on('click', '.product-d',function(){
         $.ajax({url: "/../controller/control_detail_product.php?producte=" + $(this).attr("id"), success:function(result){
             $(".list").html(result);
         }});
@@ -20,6 +20,11 @@ $(document).ready(function(){
     $('#logo-usuario').click( function(){
         $('.Toggle').slideToggle('flex');
     });
+
 });
 
-
+function add_to_cart(){
+    $.ajax({url: "/../controller/control_cart_visible.php?add=" + $('.product-purchase').attr("id") + '&name=' + $('.product-name').attr("id") + '&price=' + $('.product-price').attr("id"), success:function(result){
+        $("#cabas-container").html(result);
+    }});
+};

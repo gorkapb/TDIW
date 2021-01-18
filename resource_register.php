@@ -25,12 +25,13 @@
                                                 <input type="submit" value="Sign up" />
                                         </form>	
                                 </div>
-                                <a href="index.php?accio=home">Home</a>
-                                <a href="index.php?accio=login">Have you already registered?</a>
-                                <a href="index.php?accio=login">Log in</a>
+                                <a href="index.php?accio=home">Home</a> 
+                                <p>Have you already registered?</p>
+                                <a href="index.php?accio=login">Log in</a> 
                         </section>
                 </div>
                 <?php include __DIR__.'/resource_footer.php';?>  
 	</body>
 </html>
 
+ 
