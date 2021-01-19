@@ -20,6 +20,10 @@
             include __DIR__.'/resource_cart.php';
             break;
 
+        case 'account':
+            include __DIR__.'/resourse_account.php';
+            break;
+
         case 'home':
             include __DIR__.'/resource_home.php';
             break;

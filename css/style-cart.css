@@ -1,0 +1,15 @@
+
+.product-cart h2 {
+    max-width: 250px;
+}
+
+.product-cart p{
+    width: 250px;
+}
+
+.product-cart img{
+    max-width: 250px;
+    max-height: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

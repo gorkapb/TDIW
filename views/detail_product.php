@@ -4,7 +4,7 @@
         <img src= /img/<?php echo $productdetail[0]["image"]?> >
     </div>
 
-    <div class = "product-name"style='grid-area: name' id = '<?php echo $productdetail[0]["name"]?>'>
+    <div class = "product-name"style='grid-area: name'>
         <h2><?php echo $productdetail[0]["name"]?></h2>
     </div>
 
@@ -12,11 +12,12 @@
         <p> <?php echo $productdetail[0]["description"]?><p>
     </div>
 
-    <div class = "product-price"style='grid-area: price' id = '<?php echo $productdetail[0]["price"]?>'>
+    <div class = "product-price"style='grid-area: price'>
         <h2> $<?php echo $productdetail[0]["price"]?></h2>
     </div>
 
     <div style='grid-area: purchase'>    
-        <button class= 'product-purchase' id = '<?php echo $productdetail[0]["id"]?>' onclick='add_to_cart();'>Add to cart</button> 
+        <button class= 'purchase-button' id = '<?php echo $productdetail[0]["id"]?>' data-name ='<?php echo $productdetail[0]["name"]?>' data-price = '<?php echo $productdetail[0]["price"]?>'>Add to cart</button> 
     </div>
 </div>
+ 

@@ -6,17 +6,12 @@
 
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST'){
-    //     $filters = filter_input_array(                                 FILTER
-    //         type: INPUT_POST,
-    //         [
-    //             'email' => FILTER_DEFAULT,
 
-    //         ]
-    //     );
+        $isEmail = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
+        $isPw = filter_var($_POST['pw'], FILTER_SANITIZE_STRING);
 
-
-        $isEmail = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) !== false;
-        //$isPw = filter_var($_POST['pw'], FILTER_VALIDATE_EMAIL) !== false; //¿Tipo de validación?
+        $isEmail = filter_var($isEmail, FILTER_VALIDATE_EMAIL) !== false;
+        $isPw = filter_var($isPw, FILTER_VALIDATE_STRING) !== false;
 
         $connection = connectaBD();
 

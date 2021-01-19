@@ -32,9 +32,9 @@
 
 .category {
     border: dashed 2px #cdc9c3;
-    height: 300px;
-    width: 200px;
-    margin: 30px;
+    height: 270px;
+    width: 150px;
+    margin: 25px;
     padding: 30px;
     text-align: center;
     align-items: center;
@@ -42,8 +42,8 @@
 }
 
 .category img{
-    width: 200px;
-    margin-top: 50px;
+    width: 150px;
+    margin-top: 60px;
 }
 
 .category a {

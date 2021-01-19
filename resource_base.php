@@ -13,9 +13,10 @@
     <body>
         <div id="layout-header"> 
 
-            <header id='main-header'>    
-                <?php require __DIR__.'/controller/control_desplegable.php'; ?>        
-                <a href='index.php?accio=home'><img id='logo' src='img/logo1.png' width='250px'/></a>
+            <header id='main-header'> 
+                <?php require __DIR__.'/controller/control_desplegable.php'; ?>      
+                <a href='index.php?accio=home'><img id='logo' src='img/logo1.png' width='250px' position=''/></a> 
+                 
             </header>
         </div>
         

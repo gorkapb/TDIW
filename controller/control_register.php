@@ -6,11 +6,11 @@
 
     $filters = filter_input_array( INPUT_POST, 
     [
-        'name' => FILTER_DEFAULT,
+        'name' => FILTER_VALIDATE_STRING,
         'email' => FILTER_VALIDATE_EMAIL,
-        'pw' => FILTER_DEFAULT,
-        'dir' => FILTER_DEFAULT,
-        'town' => FILTER_DEFAULT,
+        'pw' => FILTER_VALIDATE_STRING,
+        'dir' => FILTER_VALIDATE_STRING,
+        'town' => FILTER_VALIDATE_STRING,
         'cp' => FILTER_VALIDATE_INT,
     ]
     );
@@ -23,7 +23,6 @@
     $town = $filters['town'];
     $cp = $filters['cp'];
 
-    
     //Filtrado
     /*if ($name) {
         $name = htmlentities($name, ENT_QUOTES | ENT_HTML5, 'UTF-8');

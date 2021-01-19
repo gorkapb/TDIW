@@ -82,6 +82,17 @@ a:hover {
     width: 90%;
     text-align: right;
 }
+/*
+#main-header #logo{
+    width: 90%;
+    max-width: 250px;
+    text-align: center;
+    margin-top: 10px;
+}
+#main-header div{
+    width: 10%;
+    text-align: right;
+}*/
 
 #main-header div a img{
     margin-bottom:10px;
@@ -131,23 +142,26 @@ section p1{
     cursor: pointer;
 }
 
+#desplegable {
+    position: relative;
+
+}
+
 .Toggle {
     display: none;
     position: absolute;
-} 
+    right: 0;
+    background-color: #e4e1e2;
+    border-radius: 15px;
+    font-size: 14px;
+    z-index: 1;
+    max-width: 150px;
+    margin-right: 20px;
+}
 
-.Toggle ul li{
-    width: 107px;
-    height: 25px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-left: auto;
-    margin-bottom: 2px;
-    font-size: 12px;
-    background-color:  #d4d4d4;
-    
-    
+.Toggle-line {
+    right: 0;
+    margin-right: 20px;
 }
 
 /*  PRODUCT */
@@ -182,6 +196,9 @@ section p1{
     cursor: pointer;
 }
 
+.purchase-button{
+    
+}
 
 /* DETAIL */
 
