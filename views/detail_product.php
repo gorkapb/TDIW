@@ -17,7 +17,7 @@
     </div>
 
     <div style='grid-area: purchase'>    
-        <button class= 'purchase-button' id = '<?php echo $productdetail[0]["id"]?>' data-name ='<?php echo $productdetail[0]["name"]?>' data-price = '<?php echo $productdetail[0]["price"]?>'>Add to cart</button> 
+        <button class= 'purchase-button' id = '<?php echo $productdetail[0]["id"]?>' data-name ='<?php echo $productdetail[0]["name"]?>' data-price = '<?php echo $productdetail[0]["price"]?>'>ADD TO CART</button> 
     </div>
 </div>
  

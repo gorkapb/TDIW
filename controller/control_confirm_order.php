@@ -1,0 +1,9 @@
+<?php
+    echo 'compra realizada'
+
+
+
+
+
+
+?>

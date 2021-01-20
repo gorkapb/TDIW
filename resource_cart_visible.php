@@ -1,0 +1,1 @@
+<?php require __DIR__.'/controller/control_cart_visible.php';?>

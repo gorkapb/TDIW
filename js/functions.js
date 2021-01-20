@@ -22,27 +22,35 @@ $(document).ready(function(){
     });
 
     $(document).on('click', '.purchase-button',function(){
-        $.ajax({url: "/../controller/control_cart_visible.php?add=" + $(this).attr("id") + '&name=' + $(this).attr("data-name") + '&price=' + $(this).attr("data-price"), success:function(result){
+        $.ajax({url: "/../index.php?accio=cart-visible&add=" + $(this).attr("id") + '&name=' + $(this).attr("data-name") + '&price=' + $(this).attr("data-price"), success:function(result){    
             $("#cabas-container").html(result);
         }});
     });
 
     $(document).on('click', '.product-add',function(){
-        $.ajax({url: "/../controller/control_cart.php?add=" + $(this).attr("id"), success:function(result){
+        $.ajax({url: "/../index.php?accio=cart-update&add=" + $(this).attr("id"), success:function(result){
             $("#cart-container").html(result);
         }});
     });
 
     $(document).on('click', '.product-delete',function(){
-        $.ajax({url: "/../controller/control_cart.php?delete=" + $(this).attr("id"), success:function(result){
+        $.ajax({url: "/../index.php?accio=cart-update&delete=" + $(this).attr("id"), success:function(result){
             $("#cart-container").html(result);
         }});
     });
 
     $(document).on('click', '.product-delete-all',function(){
-        $.ajax({url: "/../controller/control_cart.php?delete-all=" + $(this).attr("id"), success:function(result){
+        $.ajax({url: "/../index.php?accio=cart-update&delete-all=" + $(this).attr("id"), success:function(result){
             $("#cart-container").html(result);
         }});
     });
 
+    $(document).on('click', '.product-purchase',function(){
+        $.ajax({url: "/../index.php?accio=confirm-order", success:function(result){
+            $("#layout").html(result);
+        }});
+    });
+
 });
+
+

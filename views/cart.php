@@ -1,7 +1,4 @@
 
-<!--  PROVISIONAL !!!!!!!!!!!!!!! -->
-
-
 <div id='cart'> 
     <div id='cart-list' style= 'grid-area: cart-list'>  <!-- Lista de productos --->
         <?php if(isset($_SESSION["cart"])){ foreach ($_SESSION["cart"] as $i) { ?>
@@ -33,6 +30,6 @@
         <p>$<?php echo $_SESSION["total"]?></p>
     </div>
     <div id ='cabas-purchase' style='grid-area: cart-purchase'>
-        <button class= 'product-purchase' id = '<?php echo $_SESSION["cart"][$i]?>' onclick='purchase();'>Buy</button>
+        <button class= 'product-purchase'>BUY NOW!</button>
     </div>
 </div>

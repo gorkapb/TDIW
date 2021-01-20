@@ -5,6 +5,8 @@
         <link rel="stylesheet" type="text/css" href="css/style-home.css"/>
     </head>
     <body>
+        <?php require_once __DIR__.'/resource_base.php' ?> <!-- modificar -->
+    
         <p style='display=absolute'><?php print_r($_SESSION); ?></p>
 
         <div id='nav-menu'>
@@ -17,7 +19,7 @@
         </div> 
         
         <div id='layout'>
-            <section>
+         <section>
                 <?php require __DIR__.'/controller/control_categories.php'; ?>
             </section>
         </div>

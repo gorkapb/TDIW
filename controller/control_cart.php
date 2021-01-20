@@ -1,8 +1,4 @@
-<!--  PROVISIONAL !!!!!!!!!!!!!!! -->
 <?php  
-    if(isset($_GET['add'])||isset($_GET['delete'])||isset($_GET['delete-all'])) session_start();
-    // COMPROBAR SESION !!!!!!!!!
-
     if (isset($_SESSION['user_id'])) {
         // afegim unitat producte
         if(isset($_GET['add'])) { 

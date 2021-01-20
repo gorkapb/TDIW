@@ -1,8 +1,5 @@
 <!--  DEFINITIVO !!!!!!!!!!!!!!! -->
 <?php
-    if(isset($_GET['add'])) session_start(); 
-
-    
     if (isset($_SESSION['user_id'])) {
         
         /*

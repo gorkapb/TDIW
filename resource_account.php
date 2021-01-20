@@ -5,6 +5,8 @@
         <link rel="stylesheet" type="text/css" href="css/style-account.css"/>
     </head>
     <body>
+        <?php require_once __DIR__.'/resource_base.php' ?> <!-- modificar -->
+        
         <div id='layout'>
             <p style='display=absolute'><?php print_r($_SESSION); ?></p>
             <h1>My Account</h1>

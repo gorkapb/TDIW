@@ -186,7 +186,7 @@ section p1{
 
 .product img{
     max-width: 250px;
-    max-height: 300px;
+    max-height: 200px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -197,7 +197,19 @@ section p1{
 }
 
 .purchase-button{
-    
+     border: solid 1px #cdc9c3;
+     padding: 14px 40px;
+     margin-top: 20px;
+     font-size: 16px;
+     border-radius: 4px;
+     font-family: 'Poppins', sans-serif;
+     font-weight: bold;
+     color: #373a40;
+     letter-spacing: 1.5px;
+}
+
+.purchase-button:hover{
+    background-color:#e4e1e2;
 }
 
 /* DETAIL */
