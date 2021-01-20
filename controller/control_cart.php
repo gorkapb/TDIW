@@ -26,6 +26,7 @@
                 unset($_SESSION["price"][$prod]);
                 unset($_SESSION["quantity"][$prod]);
                 unset($_SESSION["amount"][$prod]);  
+                unset($_SESSION["img"][$prod]);  
             }
         }
         // eliminem totes les unitats de un productes
@@ -37,9 +38,21 @@
             unset($_SESSION["name"][$prod]);
             unset($_SESSION["price"][$prod]);
             unset($_SESSION["quantity"][$prod]);
-            unset($_SESSION["amount"][$prod]); 
+            unset($_SESSION["amount"][$prod]);
+            unset($_SESSION["img"][$prod]);   
         }
-        
+        // eliminem tot el cabas
+        elseif(isset($_GET['delete-cart'])){
+            $_SESSION["total"] = 0;
+            
+            unset($_SESSION["cart"]);
+            unset($_SESSION["name"]);
+            unset($_SESSION["price"]);
+            unset($_SESSION["quantity"]);
+            unset($_SESSION["amount"]);
+            unset($_SESSION["img"]);   
+        }
+
         $_SESSION["total"] = round($_SESSION["total"], 2);
 
         include __DIR__.'/../views/cart.php';

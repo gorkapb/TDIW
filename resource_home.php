@@ -24,6 +24,8 @@
             </section>
         </div>
 
+        <div class='span'></div>
+
         <?php include __DIR__.'/resource_footer.php';?>
     </body>
 </html>

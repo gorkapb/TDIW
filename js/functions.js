@@ -22,7 +22,7 @@ $(document).ready(function(){
     });
 
     $(document).on('click', '.purchase-button',function(){
-        $.ajax({url: "/../index.php?accio=cart-visible&add=" + $(this).attr("id") + '&name=' + $(this).attr("data-name") + '&price=' + $(this).attr("data-price"), success:function(result){    
+        $.ajax({url: "/../index.php?accio=cart-visible&add=" + $(this).attr("id") + '&name=' + $(this).attr("data-name") + '&price=' + $(this).attr("data-price") + '&img=' + $(this).attr("data-img"), success:function(result){    
             $("#cabas-container").html(result);
         }});
     });
@@ -45,7 +45,13 @@ $(document).ready(function(){
         }});
     });
 
-    $(document).on('click', '.product-purchase',function(){
+    $(document).on('click', '#delete-all',function(){
+        $.ajax({url: "/../index.php?accio=cart-update&delete-cart=", success:function(result){
+            $("#cart-container").html(result);
+        }});
+    });
+
+    $(document).on('click', '#product-purchase',function(){
         $.ajax({url: "/../index.php?accio=confirm-order", success:function(result){
             $("#layout").html(result);
         }});

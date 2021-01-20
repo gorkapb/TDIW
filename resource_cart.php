@@ -7,7 +7,7 @@
     <body>
         <?php require_once __DIR__.'/resource_base.php' ?> <!-- modificar -->
         
-
+        <div class='span'></div>
         <div id='layout'>
             <a href='/index.php?accio=home'>🏠 Home</a>    
             <!-- <p style='display=absolute'><?php print_r($_SESSION); ?></p> -->
@@ -17,7 +17,7 @@
             </div>
             
         </div>
-
+        <div class='span'></div>
         
         <?php include __DIR__.'/resource_footer.php';?>
     </body>

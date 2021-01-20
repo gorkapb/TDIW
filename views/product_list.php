@@ -7,7 +7,7 @@
             <img src= /img/<?php echo $producto["image"] ?> >
             <h2 class = "product-price" > $<?php echo $producto["price"] ?> </h2>
         </div>  
-        <button class= 'purchase-button' id = '<?php echo $producto["id"]?>' data-name ='<?php echo $producto["name"]?>' data-price = '<?php echo $producto["price"]?>'>ADD TO CART</button>
+        <button class= 'purchase-button' id = '<?php echo $producto["id"]?>' data-name ='<?php echo $producto["name"]?>' data-price = '<?php echo $producto["price"]?>' data-img = <?php echo $producto["image"] ?>>ADD TO CART</button>
     </article>
 
 <?php } ?>

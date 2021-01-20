@@ -29,12 +29,13 @@
             $cart_price += $cart['price_total'];
         }
         */
-        
+
         // ADD
         if(isset($_GET['add'])) {
             $prod = $_GET['add'];
             $name = $_GET['name'];
             $price = $_GET['price'];
+            $img = $_GET['img'];
 
             if(!isset($_SESSION["cart"][$prod])) { //Si lo añadimos de 0
                 $_SESSION["cart"][$prod] = $prod;
@@ -42,6 +43,7 @@
                 $_SESSION["price"][$prod] = $price;
                 $_SESSION["quantity"][$prod] = 1;
                 $_SESSION["amount"][$prod] = $price;
+                $_SESSION["img"][$prod] = $img;
             } 
             else { // Ya tenemos este producto en el carrito 
                 $_SESSION["quantity"][$prod] = $_SESSION["quantity"][$prod] + 1;

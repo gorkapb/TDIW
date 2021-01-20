@@ -7,6 +7,7 @@
         unset($_SESSION["quantity"]);
         unset($_SESSION["amount"]);
         unset($_SESSION["price"]);
+        unset($_SESSION["img"]);
         unset($_SESSION["total"]);
         header('Location: /../index.php?accio=home');
         exit;
