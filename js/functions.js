@@ -21,6 +21,10 @@ $(document).ready(function(){
         $('.Toggle').slideToggle('flex');
     });
 
+    $('#logo-search').click( function(){
+        $('.Toggle-search').slideToggle('flex');
+    });
+
     $(document).on('click', '.purchase-button',function(){
         $.ajax({url: "/../index.php?accio=cart-visible&add=" + $(this).attr("id") + '&name=' + $(this).attr("data-name") + '&price=' + $(this).attr("data-price") + '&img=' + $(this).attr("data-img"), success:function(result){    
             $("#cabas-container").html(result);

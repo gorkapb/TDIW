@@ -15,8 +15,10 @@
             <div class='alert-container'></div>
             
             <header id='main-header'> 
-
-                <?php require __DIR__.'/controller/control_desplegable.php'; ?>
+                <div class='buttons'>
+                    <?php require __DIR__.'/controller/control_search.php'; ?>
+                    <?php require __DIR__.'/controller/control_desplegable.php'; ?>
+                </div>
                 <a href='index.php?accio=home'><img id='logo' src='img/logo1.png' width='250px' position=''/></a> 
                  
             </header>

@@ -79,7 +79,7 @@ a:hover {
 }
 
 #main-header div{
-    width: 90%;
+    /*width: 90%;  /*¿¿¿???*/
     text-align: right;
 }
 /*
@@ -133,7 +133,7 @@ section p1{
 
 /* DESPLEGABLE */
 
-#logo-usuario{
+#logo-usuario, #logo-search{
     width: 30px;
     margin-top: 5px;
 }
@@ -142,10 +142,23 @@ section p1{
     cursor: pointer;
 }
 
-#desplegable {
-    position: relative;
-
+#logo-search:hover{
+    cursor: pointer;
 }
+
+.buttons {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#desplegable, #search {
+    position: relative;
+    box-sizing: border-box;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
 
 .Toggle {
     display: none;
@@ -155,6 +168,7 @@ section p1{
     border-radius: 15px;
     font-size: 14px;
     z-index: 1;
+    min-width: 150px;
     max-width: 150px;
     margin-right: 20px;
 }
@@ -163,6 +177,35 @@ section p1{
     right: 0;
     margin-right: 20px;
 }
+
+.Toggle-search {
+    display: none;
+    position: absolute;t
+    right: 0;
+    
+}
+
+.Toggle-search-line {
+    right: 0;
+    margin-right: 20px;
+    background-color: #e4e1e2;
+    border-radius: 15px;
+    border: none;
+    font-size: 14px;
+    z-index: 1;
+    /*min-width: 150px;
+    max-width: 150px;
+    min-height: 20px;
+    max-height: 20px;*/
+    width: 150px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+.Toggle-search-line:focus{
+    outline: none;
+}
+
 
 /*  PRODUCT */
 .product{
