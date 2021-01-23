@@ -250,3 +250,54 @@ section p1{
 .span{
     height: 40px;
 }
+
+
+/* ALERT */
+
+.alert-container {
+    position: fixed;
+    /*top: 30px;*/
+    /*left: 5%;*/
+    /*left: 38vw;*/
+    top: 20%;
+    left: 40%;
+    display: flex;
+    z-index: 5;
+    flex-direction: column;
+    border-radius: 10px;
+    min-width: 200px;
+    min-height: 40px;
+    align-items: center;
+    animation: animate 4s linear forwards;
+}
+.red-alert, .green-alert{
+    border-radius: 10px;
+    width: 100%;
+    text-align-last: center;
+
+}
+.red-alert{
+    background-color: #f8d7da;
+    color: #d9534f;
+}
+
+.green-alert{
+    background-color: #d4edda;
+    color: #5cb85c;
+}
+
+@keyframes animate{
+    0%{
+        opacity: 1;
+        z-index: 5;
+        display: flex;
+    }
+    40%{
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        z-index: -1;
+        display: none;
+    }
+}

@@ -23,3 +23,7 @@
         <a href="index.php?accio=cart">Purchase</a>
     </div>
 </div>
+
+<?php if(isset($alert)) {?> 
+    <script> warning('<?php echo $alert ?>'); </script> 
+<?php } unset($alert); ?>

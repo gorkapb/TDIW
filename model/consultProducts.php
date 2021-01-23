@@ -14,7 +14,6 @@
             echo  "Error: " . $e->getMessage();
         }
 
-        //HARDCODEADO? BUSCAR MEJOR FORMA 
         if($products_result == null){
             if($categoria == 'new_products'){
                 try{

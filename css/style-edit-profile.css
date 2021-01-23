@@ -1,22 +1,25 @@
-#div-form{
-    align-items: center;
-    margin-bottom: 15px;
-}
-
-#div-form form{
-    width: 30%;
+#form-container {
+    text-align: left;
+    align-items: left;
+    width: 70%;
     border: dashed 2px #cdc9c3;
     margin:0 auto;
-    padding: 3%;
+    padding: 4%;
+    padding-top:2%;
+    padding-bottom:2%;
 }
 
-#div-form form input{
+#form-container form{
+    width: 90%;
+    margin:0 auto;
+    padding: 4%;
+}
+
+#form-container form input{
     margin:20px;
 }
 
-
-#div-form form input[type=submit]{
-    margin-top: 30px;
+#form-container form input[type=submit]{
     border: solid 1px #cdc9c3;
     padding: 14px 40px;
     margin-top: 20px;
@@ -28,12 +31,12 @@
     letter-spacing: 1.5px;
 }
 
-#div-form form input:hover{
+#form-container form input:hover{
    background-color:#e4e1e2;
 }
 
 
-#div-form form label{
+#form-container form label{
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     letter-spacing: 2.5px;

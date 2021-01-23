@@ -1,24 +1,18 @@
 <?php 
     
+    define('UPLOADS_PUBLIC_PATH','/files');
+    define('UPLOADS_FULL_PATH','/home/TDIW/tdiw-g7/public_html/files');
     session_start();
 
     $accio = $_GET['accio'] ?? null;
     
     switch ($accio) {
+        case 'alert':
+            require_once __DIR__.'/resource_alert.php';
+            break;  
+
         case 'base':
             require_once __DIR__.'/resource_base.php';
-            break;
-
-        case 'register':
-            require_once __DIR__.'/resource_register.php';
-            break;
-
-        case 'login':
-            require_once __DIR__.'/resource_login.php';
-            break;
-
-        case 'logout':
-            require_once __DIR__.'/resource_logout.php';
             break;
 
         case 'cart':
@@ -36,13 +30,29 @@
         case 'confirm-order':
             require_once __DIR__.'/resource_confirm_order.php';
             break;
-
-        case 'account':
-            require_once __DIR__.'/resourse_account.php';
+        
+        case 'edit-profile':
+            require_once __DIR__.'/resource_edit_profile.php';
             break;
 
         case 'home':
             require_once __DIR__.'/resource_home.php';
+            break;
+
+        case 'login':
+            require_once __DIR__.'/resource_login.php';
+            break;
+
+        case 'logout':
+            require_once __DIR__.'/resource_logout.php';
+            break;
+
+        case 'my-carts':
+            require_once __DIR__.'/resource_my_carts.php';
+            break;
+
+        case 'register':
+            require_once __DIR__.'/resource_register.php';
             break;
 
         default:

@@ -7,3 +7,4 @@
     <br/>
     <h2>TOTAL: $<?php echo $_SESSION['total']?></h2>
 </div>
+<a href='/index.php?accio=home'>🏠 Home</a> 

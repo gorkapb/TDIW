@@ -56,7 +56,21 @@ $(document).ready(function(){
             $("#layout").html(result);
         }});
     });
-
 });
 
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
 
+function warning(type){
+    $.ajax({url: "/../index.php?accio=alert&type=" + type, success:function(result){
+        $(".alert-container").html(result);
+    }});
+};
+
+// function empty(){
+//     await sleep(2000);
+//     $.ajax({url: "", success:function(result){
+//         $(".alert-container").remove();
+//     }});
+// }

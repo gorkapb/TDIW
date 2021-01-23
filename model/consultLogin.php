@@ -1,7 +1,7 @@
 <?php
     function login($connection, $mail, $pw){
         try{
-            $SQL = "SELECT name, email, password FROM users where email= :mail LIMIT 1";
+            $SQL = "SELECT * FROM users where email= :mail LIMIT 1";
             $consult_login = $connection->prepare($SQL);
         
             $consult_login->bindParam(":mail", $mail, PDO::PARAM_STR); 
@@ -18,10 +18,12 @@
                 return $login_result;//VALID
             }else{
                 //Mostrar mensaje de error
-                return null;//INVALID PASSWORD
+                //return null;//INVALID PASSWORD
+                return 'login-error-password';
             }
         }else{
-            return null;//INVALID USER
+            //return null;//INVALID USER
+            return 'login-error-email';
         }
     }
 ?>
