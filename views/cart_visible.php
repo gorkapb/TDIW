@@ -10,7 +10,7 @@
             <?php if(isset($_SESSION["cart"])){ foreach ($_SESSION["cart"] as $prod) { ?>
                 <li> 
                     <p><?php echo $_SESSION["name"][$prod] ?></p>
-                    <p>x<?php echo $_SESSION["quantity"][$prod] ?></p>
+                    <p><?php echo $_SESSION["quantity"][$prod] ?></p>
                 </li>
             <?php }} ?>
         </ul>
@@ -20,7 +20,7 @@
     </div>
 
     <div id='cabas-purchase'>
-        <a href="index.php?accio=cart">Purchase</a>
+        <a href="index.php?accio=cart">Buy!</a>
     </div>
 </div>
 

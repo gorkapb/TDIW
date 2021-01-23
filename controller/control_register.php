@@ -38,6 +38,9 @@
         } elseif ($password != $repeat_password) { //LA 2 PW NO SON IGUALES
             $alert = 'register-error-password';
 
+        } elseif (!is_int($cp)) { //CP ES INTEGER
+            $alert = 'register-error-cp';
+
         } else {  // TODO CORRECTO
             register($connection, $name, $email, $password, $dir, $town, $cp);
             $url = "/../index.php?accio=login";

@@ -12,14 +12,20 @@
         }
 
         $cart_id = $max_id['max'] + 1;
-               
+        
+        //WE GET ACTUAL DATE AND HOUR
+        $date_total = getdate();
+        $date = strval($date_total['mday']) . "/" . strval($date_total['mon']) . "/" . strval($date_total['year']);
+        $time = strval($date_total['hours']) . ":" . strval($date_total['minutes']) . ":" . strval($date_total['seconds']);
 
         //INSERTAMOS EN CART
         try{
-            $SQL = "INSERT INTO cart(user,id_cart,total) VALUES (:user, :id_cart,:total)";
+            $SQL = "INSERT INTO cart(user,date,time,id_cart,total) VALUES (:user,:date,:time,:id_cart,:total)";
             $consult_cart = $connection->prepare($SQL);
 
             $consult_cart->bindParam(":user", $user_id, PDO::PARAM_STR);
+            $consult_cart->bindParam(":date", $date, PDO::PARAM_STR);
+            $consult_cart->bindParam(":time", $time, PDO::PARAM_STR);
             $consult_cart->bindParam(":id_cart", $cart_id, PDO::PARAM_STR);
             $consult_cart->bindParam(":total", $total, PDO::PARAM_STR);
 

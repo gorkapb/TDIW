@@ -11,6 +11,11 @@
             $text = 'Product added properly.';
             $color = 'green';
             break;
+            
+        case 'register-error-cp':
+            $text = 'C.P is not a integer number.';
+            $color = 'red';
+            break;
 
         case 'register-error-email':
             $text = 'You are already registered.';
