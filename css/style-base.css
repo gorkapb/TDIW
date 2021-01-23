@@ -180,7 +180,7 @@ section p1{
 
 .Toggle-search {
     display: none;
-    position: absolute;t
+    position: absolute;
     right: 0;
     
 }
@@ -269,6 +269,7 @@ section p1{
         'image name'
         'image description'
         'image price'
+        'image buttons'
         'image purchase';
 }
 

@@ -3,7 +3,7 @@
     <div class = "Toggle">
         <?php if (isset($_SESSION['user_id'])) { ?>
             <div class='Toggle-line'><a href="index.php?accio=edit-profile">Edit profile</a></div>
-            <!---<div class='Toggle-line'><a href="index.php?accio=my-carts">My carts</a></div>--->
+            <div class='Toggle-line'><a href="index.php?accio=order-list">Previous Orders</a></div>
             <div class='Toggle-line'><a href="index.php?accio=cart">Cart</a></div>
             <div class='Toggle-line'><a href="index.php?accio=logout">Log out</a></div>
         <?php } else{ ?>

@@ -30,6 +30,10 @@
         case 'confirm-order':
             require_once __DIR__.'/resource_confirm_order.php';
             break;
+   
+        case 'detail-product':
+            require_once __DIR__.'/resource_detail_product.php';
+            break;
         
         case 'edit-profile':
             require_once __DIR__.'/resource_edit_profile.php';
@@ -47,8 +51,8 @@
             require_once __DIR__.'/resource_logout.php';
             break;
 
-        case 'my-carts':
-            require_once __DIR__.'/resource_my_carts.php';
+        case 'order-list':
+            require_once __DIR__.'/resource_order_list.php';
             break;
 
         case 'register':

@@ -36,6 +36,11 @@
             $text = 'Wrong password! Please try again.';
             $color = 'red';
             break;
+
+        case 'quantity-product-error':
+            $text = 'Quantity minimun requiered.';
+            $color = 'red';
+            break;
     }
 
     include __DIR__.'/../views/alert.php';
